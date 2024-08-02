@@ -19,3 +19,6 @@ Este projeto é uma calculadora simples que implementa as quatro operações fun
 1. **Digite os Números**: Insira os números nos campos apropriados.
 2. **Escolha a Operação**: Selecione a operação desejada no menu suspenso.
 3. **Veja o Resultado**: O resultado será exibido automaticamente.
+
+## Site da aplicação
+[Calculadora simples](https://calculadora-simples-umber.vercel.app/)
