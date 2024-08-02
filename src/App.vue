@@ -15,7 +15,7 @@ import { reactive } from 'vue';
       return estado.resultado;
     }
     else{
-      return estado.resultado.toFixed(3);
+      return parseFloat(estado.resultado.toFixed(3));
     }
   }
 
@@ -63,14 +63,14 @@ import { reactive } from 'vue';
     <p>Digite abaixo os números e a operação desejada</p>
     <form class="form">
       <div class="row">
-        <div class="col-2">
+        <div class="col-md-2 col-5">
           <input @keyup="evento => estado.numero1 = evento.target.value" type="number" value="1" placeholder="Primeiro número" class="form-control">
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-5">
           <input @keyup="evento => estado.numero2 = evento.target.value" type="number" value="1" placeholder="Segundo número" class="form-control">
         </div>
-        <div class="col-md-3">
-          <select @change="evento => estado.operacao = evento.target.value" class="form-control">
+        <div class="col-md-3 col-10 mt-md-0 mt-3">
+          <select @change="evento => estado.operacao = evento.target.value" class="form-control custom-select">
             <option value="adicao">Adição</option>
             <option value="subtracao">Subtração</option>
             <option value="multiplicacao">Multiplicação</option>
@@ -81,11 +81,23 @@ import { reactive } from 'vue';
     </form>
     <p v-if="(estado.numero1 == '') || (estado.numero2 == '')" class="mt-3">O resultado é igual a</p>
     <p v-else class="mt-3">O resultado é igual a {{ realizaOperacao() }}</p>
+    <p class="warning mt-5">* A precisão das operação está restrita a, no máximo, três casas decimais</p>
   </div>
-
-  <!-- {{ estado.resultado }} -->
 </template>
 
-<style scoped>
+<style>
+  * {
+    background-color: #1f0a1d;
+    color: #e5ead4;
+  }
 
+  .warning{
+    color: #a397a3;
+    font-size: 12px;
+  }
+
+  .custom-select option{
+    background-color: #e5ead4;
+    color: #1f0a1d;
+  }
 </style>
