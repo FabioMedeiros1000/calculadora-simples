@@ -1,29 +1,21 @@
-# calculadora-simples
+# Calculadora Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+## Sobre o Projeto
 
-## Recommended IDE Setup
+Este projeto é uma calculadora simples que implementa as quatro operações fundamentais da matemática: soma, subtração, multiplicação e divisão.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Tecnologias Utilizadas
 
-## Customize configuration
+- **Vue.js**: Framework JavaScript para construir a interface do usuário.
+- **Bootstrap**: Framework CSS para estilizar a interface.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Funcionalidades
 
-## Project Setup
+- **Operações Matemáticas**: Realiza adição, subtração, multiplicação e divisão.
+- **Atualização Automática**: O resultado é atualizado automaticamente ao digitar os números e selecionar a operação desejada.
 
-```sh
-npm install
-```
+## Como Usar
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+1. **Digite os Números**: Insira os números nos campos apropriados.
+2. **Escolha a Operação**: Selecione a operação desejada no menu suspenso.
+3. **Veja o Resultado**: O resultado será exibido automaticamente.
